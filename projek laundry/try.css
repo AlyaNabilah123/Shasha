@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.page1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 14px 0px;
+    background: #6DB5D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 12px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 14px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.content {
+    margin-top: 150px;
+    margin-right: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right h3 {
+    color: black;
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.right p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.btn {
+    color: white;
+    background: #41BC4D;
+    text-decoration: none;
+    padding: 8px 8px;
+    border-radius: 6px;
+    transition: 0.2s;
+    transition-property: background;
+}
+
+.btn:hover {
+    background: #31973b;
+}
+
+.left {
+    margin-left: 100px;
+}
+
+.left img {
+    width: 475px;
+    height: 345px;
+}
+
+.page2 {
+    text-align: center;
+    margin-top: 85px;
+    align-content: center;
+    height: auto;
+}
+
+.p-kiri, .p-tengah, .p-kanan {
+    text-align: center;
+    color: black;
+    float: left;
+    margin-left: 145px;
+    margin-bottom: 200px;
+}
+
+.p-kiri img, .p-tengah img, .p-kanan img {
+    width: 232px;
+    height: 216px;
+    border-radius: 100%;
+}
+
+.p-kiri h4, .p-tengah h4, .p-kanan h4 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.p-kiri p, .p-tengah p, .p-kanan p {
+    margin-top: 20px;
+}
+
+.page3 {
+    text-align: center;
+    margin-top: 70px;
+    align-content: center;
+    height: auto;
+}
